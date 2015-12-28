@@ -27,6 +27,12 @@ def loop():
     if guess == the_number:
         GPIO.output(RED_LED, True)
         GPIO.output(GREEN_LED, True)
+        print('***********************YOU WIN********************')
+        time.sleep(2)
+        print('Play again ....')
+        GPIO.cleanup()
+        exit()
+        #the_number = random.randrange(3, 101)
         #time.sleep(0.5)
     elif guess > the_number:
         GPIO.output(RED_LED, True)
