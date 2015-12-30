@@ -57,8 +57,16 @@ def loop():
         #time.sleep(0.5)
     elif guess > the_number:
         set_light('red')
+        time.sleep(0.5)
+        set_light('black')
+        time.sleep(0.5)
+        set_light('red')
         #time.sleep(2)
     else:
+        set_light('green')
+        time.sleep(0.5)
+        set_light('black')
+        time.sleep(0.5)
         set_light('green')
         #time.sleep(2)
  
